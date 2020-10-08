@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class RegisterViewController: UIViewController {
-
+    
     @IBOutlet weak var fname : UITextField!
     @IBOutlet weak var lname : UITextField!
     @IBOutlet weak var email : UITextField!
@@ -20,7 +20,7 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         errorLabel.alpha = 0;
         
     }
@@ -44,6 +44,22 @@ class RegisterViewController: UIViewController {
                 self.showError("\(error.localizedDescription)")
             }
             else {
+                // add UUID to db
+                guard let userID = Auth.auth().currentUser?.uid else { return }
+                
+                //add fname, lname to db
+                let db = Firestore.firestore()
+                
+                db.collection("users").document(userID).setData([
+                    "Fname": Fname,
+                    "Lname": Lname,
+                ]) { err in
+                    if let err = err {
+                        print("Error writing document: \(err)")
+                    } else {
+                        print("Document successfully written!")
+                    }
+                }
                 // Go to home page
                 (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
             }
@@ -54,4 +70,8 @@ class RegisterViewController: UIViewController {
      errorLabel.text = message
      errorLabel.alpha = 1
     }
+    
+    
+ 
+    
 }

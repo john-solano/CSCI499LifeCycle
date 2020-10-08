@@ -6,6 +6,7 @@ target 'LifeCycle' do
   use_frameworks!
 
   # Pods for LifeCycle
+	pod 'FSCalendar'
 
 # Add the Firebase pod for Google Analytics
 pod 'Firebase/Analytics'
