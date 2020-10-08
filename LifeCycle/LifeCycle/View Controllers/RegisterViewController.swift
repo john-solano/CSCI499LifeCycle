@@ -44,10 +44,10 @@ class RegisterViewController: UIViewController {
                 self.showError("\(error.localizedDescription)")
             }
             else {
-                // add UUID to db
+                // fetch UUID that was just created
                 guard let userID = Auth.auth().currentUser?.uid else { return }
                 
-                //add fname, lname to db
+                // add fname, lname to db
                 let db = Firestore.firestore()
                 
                 db.collection("users").document(userID).setData([

@@ -60,12 +60,22 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>FirebaseDatabase.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>23</integer>
+		</dict>
 		<key>FirebaseFirestore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>9</integer>
+		</dict>
+		<key>FirebaseFirestoreSwift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>24</integer>
 		</dict>
 		<key>FirebaseInstallations.xcscheme</key>
 		<dict>

@@ -27,7 +27,6 @@ class LoginViewController: UIViewController {
     
 
     @IBAction func LoginTapped(_ sender: Any) {
-        //for debugging
         print("Login Tapped");
         
         // Create clean fields/parse text from text box
