@@ -30,8 +30,13 @@ class SettingsViewController: UIViewController {
         //settings.setBottomBorder()
     }
   
-    
-    
+    @IBAction func UserEmailTapped(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let ProfileViewController = storyboard.instantiateViewController(identifier: "ProfileViewController")
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(ProfileViewController)
+        
+    }
+
 }
 /*extension UILabel {
    /* func setPadding() {
