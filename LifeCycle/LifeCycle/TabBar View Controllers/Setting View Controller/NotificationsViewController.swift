@@ -1,20 +1,19 @@
 //
-//  LoginNavigationController.swift
+//  NotificationsViewController.swift
 //  LifeCycle
 //
-//  Created by John Solano on 9/25/20.
+//  Created by John Solano on 10/15/20.
 //  Copyright © 2020 John Solano. All rights reserved.
 //
 
 import UIKit
 
-class LoginNavigationController: UINavigationController {
+class NotificationsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationBar.shadowImage = UIImage()
+        // Do any additional setup after loading the view.
     }
     
 
@@ -29,3 +28,4 @@ class LoginNavigationController: UINavigationController {
     */
 
 }
+

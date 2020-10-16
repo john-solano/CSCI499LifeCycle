@@ -15,6 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let _ = (scene as? UIWindowScene) else { return }
+
         
         // snippet from https://fluffy.es/how-to-transition-from-login-screen-to-tab-bar-controller/
         // if a user signs in and out and back in, it wont create multiple view controllers stacked
@@ -38,6 +39,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // end of snippet
         
     }
+ 
+ 
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
@@ -68,6 +71,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     // This handles the change in View Controllers and its animation
+    // Ex of how to use:
+    // (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+    
     func changeRootViewController(_ vc: UIViewController, animated: Bool = true) {
         guard let window = self.window else {
             return

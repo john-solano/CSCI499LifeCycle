@@ -1,13 +1,70 @@
 //
-//  RegisterViewController.swift
+//  LoginNavigationController.swift
 //  LifeCycle
 //
-//  Created by John Solano on 9/24/20.
+//  Created by John Solano on 9/25/20.
 //  Copyright © 2020 John Solano. All rights reserved.
 //
 
 import UIKit
 import Firebase
+
+// All View Controllers regarding Authentication
+
+class LoginNavigationController: UINavigationController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationBar.shadowImage = UIImage()
+    }
+    
+}
+
+// ----------------------------------------------------------------------------------------
+
+class LoginViewController: UIViewController {
+
+    @IBOutlet weak var username : UITextField!
+    @IBOutlet weak var password : UITextField!
+    @IBOutlet weak var errorLabel : UILabel!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Hide Error label
+        errorLabel.alpha = 0;
+    }
+    
+    @IBAction func LoginTapped(_ sender: Any) {
+        // Create clean fields/parse text from text box
+        let email = username.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let pass = password.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        // Reference to Story Board
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
+        
+        //Sign in the user
+        Auth.auth().signIn(withEmail: email, password: pass) { (result, error) in
+            if let error = error {
+                self.showError("\(error.localizedDescription)")
+            }
+            else{
+            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
+            }
+        } // end of sign in
+        
+    }
+
+    func showError(_ message:String){
+     errorLabel.text = message
+     errorLabel.alpha = 1
+    }
+
+}
+
+// ----------------------------------------------------------------------------------------
 
 class RegisterViewController: UIViewController {
     
@@ -20,9 +77,8 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // Hide Error label when view is loaded
         errorLabel.alpha = 0;
-        
     }
     
     @IBAction func SignUpTapped(_ sender: Any) {
@@ -70,8 +126,4 @@ class RegisterViewController: UIViewController {
      errorLabel.text = message
      errorLabel.alpha = 1
     }
-    
-    
- 
-    
 }

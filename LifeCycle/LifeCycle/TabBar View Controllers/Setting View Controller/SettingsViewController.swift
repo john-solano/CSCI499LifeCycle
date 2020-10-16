@@ -30,6 +30,7 @@ class SettingsViewController: UIViewController {
         //settings.setBottomBorder()
     }
   
+<<<<<<< HEAD:LifeCycle/LifeCycle/TabBar View Controllers/SettingsViewController.swift
     @IBAction func UserEmailTapped(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let ProfileViewController = storyboard.instantiateViewController(identifier: "ProfileViewController")
@@ -37,6 +38,25 @@ class SettingsViewController: UIViewController {
         
     }
 
+=======
+    
+    @IBAction func NotificationTapped(_ sender: Any) {
+        
+        // reference to StoryBoard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // reference to the View Controller you want to goto
+        let NotificationSettingsViewController = storyboard.instantiateViewController(identifier: "NotificationsViewController")
+        
+        // changeRootViewController Function 
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(NotificationSettingsViewController)
+        
+    }
+    
+    
+    
+    
+>>>>>>> master:LifeCycle/LifeCycle/TabBar View Controllers/Setting View Controller/SettingsViewController.swift
 }
 /*extension UILabel {
    /* func setPadding() {
