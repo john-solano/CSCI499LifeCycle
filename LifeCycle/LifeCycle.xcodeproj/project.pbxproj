@@ -14,14 +14,14 @@
 		6F27DF7E25147B7900112385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F27DF7D25147B7900112385 /* Assets.xcassets */; };
 		6F27DF8125147B7900112385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F27DF7F25147B7900112385 /* LaunchScreen.storyboard */; };
 		6F27DF99251AAA4100112385 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F27DF98251AAA4100112385 /* GoogleService-Info.plist */; };
-		6F27DF9B251AC40D00112385 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DF9A251AC40D00112385 /* LoginViewController.swift */; };
-		6F27DF9D251D660700112385 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DF9C251D660700112385 /* RegisterViewController.swift */; };
-		6F27DFA0251E89B600112385 /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DF9F251E89B600112385 /* LoginNavigationController.swift */; };
+		6F27DFA0251E89B600112385 /* LoginRegisterViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DF9F251E89B600112385 /* LoginRegisterViewControllers.swift */; };
 		6F27DFA4252FE67400112385 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DFA3252FE67400112385 /* SettingsViewController.swift */; };
 		6F27DFA9253242BF00112385 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DFA8253242BF00112385 /* MainTabBarController.swift */; };
 		6F27DFAB253247E000112385 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DFAA253247E000112385 /* ListViewController.swift */; };
 		6F27DFAD2532481C00112385 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DFAC2532481C00112385 /* AddItemViewController.swift */; };
 		6F27DFAF2532483400112385 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DFAE2532483400112385 /* CalendarViewController.swift */; };
+		6FA5C2CC25390FB7003FCA91 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA5C2CB25390FB7003FCA91 /* AppColors.swift */; };
+		6FA5C2CF253924B7003FCA91 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA5C2CE253924B7003FCA91 /* NotificationsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,14 +34,14 @@
 		6F27DF8025147B7900112385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F27DF8225147B7900112385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F27DF98251AAA4100112385 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		6F27DF9A251AC40D00112385 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		6F27DF9C251D660700112385 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		6F27DF9F251E89B600112385 /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
+		6F27DF9F251E89B600112385 /* LoginRegisterViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRegisterViewControllers.swift; sourceTree = "<group>"; };
 		6F27DFA3252FE67400112385 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6F27DFA8253242BF00112385 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		6F27DFAA253247E000112385 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		6F27DFAC2532481C00112385 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		6F27DFAE2532483400112385 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		6FA5C2CB25390FB7003FCA91 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppColors.swift; path = LifeCycle/TESTCONTROLLERS/AppColors.swift; sourceTree = SOURCE_ROOT; };
+		6FA5C2CE253924B7003FCA91 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		A222ED143D42CCD6FD0CCDB5 /* Pods-LifeCycle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeCycle.debug.xcconfig"; path = "Target Support Files/Pods-LifeCycle/Pods-LifeCycle.debug.xcconfig"; sourceTree = "<group>"; };
 		ACFEA4A37867044FA7D84F9D /* Pods_LifeCycle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeCycle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,10 +79,10 @@
 		6F27DF7325147B7000112385 /* LifeCycle */ = {
 			isa = PBXGroup;
 			children = (
-				6F27DF8825147CDA00112385 /* Navigation View Controllers */,
 				6F27DFA5253241CD00112385 /* TabBar View Controllers */,
-				6F27DF9E251D6CB200112385 /* Assets */,
+				6F27DF9E251D6CB200112385 /* StylingAndAssets */,
 				6F27DF7425147B7000112385 /* AppDelegate.swift */,
+				6F27DF9F251E89B600112385 /* LoginRegisterViewControllers.swift */,
 				6F27DF7625147B7000112385 /* SceneDelegate.swift */,
 				6F27DF7A25147B7000112385 /* Main.storyboard */,
 				6F27DF7D25147B7900112385 /* Assets.xcassets */,
@@ -93,33 +93,33 @@
 			path = LifeCycle;
 			sourceTree = "<group>";
 		};
-		6F27DF8825147CDA00112385 /* Navigation View Controllers */ = {
+		6F27DF9E251D6CB200112385 /* StylingAndAssets */ = {
 			isa = PBXGroup;
 			children = (
-				6F27DF9F251E89B600112385 /* LoginNavigationController.swift */,
-				6F27DF9A251AC40D00112385 /* LoginViewController.swift */,
-				6F27DF9C251D660700112385 /* RegisterViewController.swift */,
+				6FA5C2CB25390FB7003FCA91 /* AppColors.swift */,
 			);
-			path = "Navigation View Controllers";
-			sourceTree = "<group>";
-		};
-		6F27DF9E251D6CB200112385 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Assets;
+			path = StylingAndAssets;
 			sourceTree = "<group>";
 		};
 		6F27DFA5253241CD00112385 /* TabBar View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6FA5C2CD25392487003FCA91 /* Setting View Controller */,
 				6F27DFA8253242BF00112385 /* MainTabBarController.swift */,
-				6F27DFA3252FE67400112385 /* SettingsViewController.swift */,
 				6F27DFAA253247E000112385 /* ListViewController.swift */,
 				6F27DFAC2532481C00112385 /* AddItemViewController.swift */,
 				6F27DFAE2532483400112385 /* CalendarViewController.swift */,
 			);
 			path = "TabBar View Controllers";
+			sourceTree = "<group>";
+		};
+		6FA5C2CD25392487003FCA91 /* Setting View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6F27DFA3252FE67400112385 /* SettingsViewController.swift */,
+				6FA5C2CE253924B7003FCA91 /* NotificationsViewController.swift */,
+			);
+			path = "Setting View Controller";
 			sourceTree = "<group>";
 		};
 		BAD5DC7D382A09F15F901607 /* Pods */ = {
@@ -255,14 +255,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FA5C2CF253924B7003FCA91 /* NotificationsViewController.swift in Sources */,
 				6F27DFAF2532483400112385 /* CalendarViewController.swift in Sources */,
-				6F27DF9B251AC40D00112385 /* LoginViewController.swift in Sources */,
-				6F27DFA0251E89B600112385 /* LoginNavigationController.swift in Sources */,
+				6F27DFA0251E89B600112385 /* LoginRegisterViewControllers.swift in Sources */,
 				6F27DFA9253242BF00112385 /* MainTabBarController.swift in Sources */,
 				6F27DF7525147B7000112385 /* AppDelegate.swift in Sources */,
 				6F27DF7725147B7000112385 /* SceneDelegate.swift in Sources */,
 				6F27DFAD2532481C00112385 /* AddItemViewController.swift in Sources */,
-				6F27DF9D251D660700112385 /* RegisterViewController.swift in Sources */,
+				6FA5C2CC25390FB7003FCA91 /* AppColors.swift in Sources */,
 				6F27DFAB253247E000112385 /* ListViewController.swift in Sources */,
 				6F27DFA4252FE67400112385 /* SettingsViewController.swift in Sources */,
 			);
