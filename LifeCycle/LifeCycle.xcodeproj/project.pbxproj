@@ -21,6 +21,7 @@
 		6F27DFAB253247E000112385 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DFAA253247E000112385 /* ListViewController.swift */; };
 		6F27DFAD2532481C00112385 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DFAC2532481C00112385 /* AddItemViewController.swift */; };
 		6F27DFAF2532483400112385 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DFAE2532483400112385 /* CalendarViewController.swift */; };
+		6FA5C2D725393994003FCA91 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA5C2D625393994003FCA91 /* SettingsViewController.swift */; };
 		D2FDCB4F253934B700F34105 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDCB4E253934B700F34105 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		6F27DFAA253247E000112385 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		6F27DFAC2532481C00112385 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		6F27DFAE2532483400112385 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		6FA5C2D625393994003FCA91 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A222ED143D42CCD6FD0CCDB5 /* Pods-LifeCycle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeCycle.debug.xcconfig"; path = "Target Support Files/Pods-LifeCycle/Pods-LifeCycle.debug.xcconfig"; sourceTree = "<group>"; };
 		ACFEA4A37867044FA7D84F9D /* Pods_LifeCycle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeCycle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FDCB4E253934B700F34105 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				6F27DFAA253247E000112385 /* ListViewController.swift */,
 				6F27DFAC2532481C00112385 /* AddItemViewController.swift */,
 				6F27DFAE2532483400112385 /* CalendarViewController.swift */,
+				6FA5C2D625393994003FCA91 /* SettingsViewController.swift */,
 				D2FDCB4E253934B700F34105 /* ProfileViewController.swift */,
 			);
 			path = "TabBar View Controllers";
@@ -257,6 +260,7 @@
 			files = (
 				6F27DFAF2532483400112385 /* CalendarViewController.swift in Sources */,
 				6F27DF9B251AC40D00112385 /* LoginViewController.swift in Sources */,
+				6FA5C2D725393994003FCA91 /* SettingsViewController.swift in Sources */,
 				6F27DFA0251E89B600112385 /* LoginNavigationController.swift in Sources */,
 				6F27DFA9253242BF00112385 /* MainTabBarController.swift in Sources */,
 				6F27DF7525147B7000112385 /* AppDelegate.swift in Sources */,
